@@ -27,9 +27,19 @@ services:
 
   frontend:
     image: klisman013/react-frontend:latest
+    depends_on:
+      - backend
+    networks:
+      - react-spring
+
+  proxy:
+    image: nginx:1.25-alpine
     ports:
       - "80:80"
+    volumes:
+      - ./eb-nginx.conf:/etc/nginx/conf.d/default.conf:ro
     depends_on:
+      - frontend
       - backend
     networks:
       - react-spring
