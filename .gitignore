@@ -1,5 +1,11 @@
 RELATORIO.md
+RELATORIO-AWS.doc
+RELATORIO-AWS-EMBUTIDO.html
+Relatorio-AWS-Luan-Rodrigo.docx
 AWS-EC2.md
+CHECKLIST-ANDAMENTO.md
+gerar_relatorio_docx.py
+*.zip
 backend/target/
 prints/
 .vscode/
